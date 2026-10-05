@@ -57,3 +57,5 @@ if (!result.ok) throw StateError('Invalid webhook: ${result.reason}');
 Verifier dùng HMAC-SHA256 thuần Dart, so sánh constant-time và tolerance mặc định 300 giây. Dùng `transaction_code` làm khóa idempotency. Flutter sub-example ở `example/qr_widget.dart` chỉ hiển thị `qr_data_url` do API trả về; pubspec gốc vẫn zero-dependency.
 
 Package không dùng `package:crypto` hay package test. Gate offline: `dart analyze lib test` và `dart run test/monapay_test.dart`; nếu có Flutter SDK, chạy thêm `cd example && flutter analyze`. Tài liệu: https://monapay.vn/docs · Hotline 1900 636 648 · info@themona.global.
+
+**MONA Pay thuộc bộ MONA Cloud của The MONA Group.**
